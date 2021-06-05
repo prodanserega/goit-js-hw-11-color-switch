@@ -19,6 +19,9 @@ stopButton.addEventListener("click", stopBtnClick);
 
 
 function startBtnClick() {
+    if (colorInterval) {
+        return;
+    }
     startButton.disabled = true;
     colorInterval = setInterval(setColor,1000);
 };
@@ -26,6 +29,7 @@ function startBtnClick() {
 function stopBtnClick() {
     startButton.disabled = false;
     clearInterval(colorInterval);
+    ColorInterval = '';
 };
 
 function setColor() {
