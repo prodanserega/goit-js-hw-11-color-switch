@@ -29,7 +29,7 @@ function startBtnClick() {
 function stopBtnClick() {
     startButton.disabled = false;
     clearInterval(colorInterval);
-    ColorInterval = '';
+    colorInterval = '';
 };
 
 function setColor() {
